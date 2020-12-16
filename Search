@@ -1,0 +1,10 @@
+from youtubesearchpython import SearchVideos
+input =input("s E a R c H YouTube videos :")
+search = SearchVideos(input, offset = 1, mode = "dict", max_results = 1)
+result = search.result()
+result = result['search_result']
+result = result[0]
+result_name = result["title"]
+result_link = result["link"]
+print(result_name)
+print(result_link)
